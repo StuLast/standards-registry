@@ -1,6 +1,20 @@
 import React from 'react';
 
-function Link({ href, text, newWindow = false, className, children }) {
+interface iLink {
+  href: string;
+  text?: string;
+  newWindow?: boolean;
+  className?: string;
+  children?: React.ReactNode;
+}
+
+function Link({
+  href,
+  text,
+  newWindow = false,
+  className,
+  children,
+}: iLink): JSX.Element {
   return (
     <a
       target={newWindow ? '_blank' : '_self'}

@@ -21,9 +21,9 @@
     "**/*.tsx",
     "helpers/getHost.test.js",
     "helpers/getHost.js",
-    "components/Link/index.test.js",
-    "components/Link/index.jsx",
-    "components/Link/index.test.jsx"
+    "components/Link/__test__/index.test.js",
+    "components/Link/index.js",
+    "components/Link/index.test.js"
   ],
   "exclude": ["node_modules"]
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import '@testing-library/jest-dom';
 
 import { render, screen } from '@testing-library/react';
-import Link from './index';
+import Link from '../index';
 
 describe('Link component', () => {
   it('should render a link with the text argument in the object', () => {
