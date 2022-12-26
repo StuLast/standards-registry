@@ -1,10 +1,20 @@
-export default function Link({
+import React from 'react';
+
+interface iLink {
+  href: string;
+  text?: string;
+  newWindow?: boolean;
+  className?: string;
+  children?: React.ReactNode;
+}
+
+function Link({
   href,
   text,
   newWindow = false,
   className,
   children,
-}) {
+}: iLink): JSX.Element {
   return (
     <a
       target={newWindow ? '_blank' : '_self'}
@@ -16,3 +26,4 @@ export default function Link({
     </a>
   );
 }
+export default Link;

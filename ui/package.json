@@ -11,7 +11,7 @@
     "prettier": "pretty-quick --write",
     "test": "next lint && npm run lint && prettier --check . && jest",
     "test:integration": "cypress run",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch --verbose"
   },
   "dependencies": {
     "axios": "^0.27.2",
@@ -35,6 +35,10 @@
     "@-ralph/cypress-axe": "^1.0.0-rc",
     "@babel/preset-env": "^7.17.12",
     "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.18.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.0.0",
+    "@types/testing-library__react": "^10.2.0",
     "axe-core": "^4.4.3",
     "cypress": "^10.3.1",
     "cypress-html-validate": "^5.1.0",

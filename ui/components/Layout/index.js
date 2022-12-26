@@ -31,11 +31,14 @@ export default function Home({ children, ...props }) {
     'help-and-resources',
   ].map((name) => {
     const page = pages.find((p) => p.name === name);
+    if (!page) {
+      return;
+    }
     return {
       url: `/${page.name}`,
       label: page.short_title || page.title,
     };
-  });
+  }).filter(link => link);
 
   const { content } = useContentContext();
   const { title } = content;
