@@ -21,8 +21,8 @@
     "**/*.tsx",
     "helpers/getHost.test.js",
     "helpers/getHost.js",
-    "components/Link/__test__/index.test.js",
-    "components/Link/index.js",
+    "components/Link/__test__/index.test.tsx",
+    "components/Link/index.tsx",
     "components/Link/index.test.js"
   ],
   "exclude": ["node_modules"]
